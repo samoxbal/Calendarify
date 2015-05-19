@@ -1,0 +1,90 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=cyrillic);
+.calendar-wrapper {
+
+	border:1px solid #ddd;
+	position:relative;
+	width: 410px;
+	display:inline-block;
+	margin-left:10px;
+}
+
+.calendar-header {
+
+	background: #fff;
+	font-size:22px;
+	text-align: center;
+	text-transform: uppercase;
+  	padding: 5px 0px 0px 0px;
+  	height: 35px;
+  	font-family: 'Open Sans Condensed', sans-serif;
+  	position: relative;
+  	border-top: 5px solid #ef4f69;
+  	border-bottom: 1px solid #ddd;
+}
+
+.calendar-container {
+
+	background: #f6f6f6;
+	padding-bottom: 20px;
+}
+
+table.discount-table {
+	border-collapse: collapse;
+/*	border: 1px solid #9DABCE;
+	border-width: 0px 0px 1px 1px;*/
+	margin: auto;
+	font-size: 20px;
+}
+table.discount-table td {
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	vertical-align: middle;
+	background: #fff;
+	color: #444;
+	position: relative;
+	border:1px solid #ddd;
+	font-family: 'Lato', sans-serif;
+}
+table.discount-table th {
+	height: 30px;
+	font-weight: bold;
+	font-size: 14px;
+}
+table.discount-table td:hover, th:hover {
+	background-position: 0px -81px;
+	color: #222;
+}
+table.discount-table td.price20 {
+	background: url(http://cityhotelgroup.ru/js/calendar/cells.png);
+	background-position: 162px 0px;
+	color: white;
+}
+table.discount-table td.price20:hover {
+	background-position: 162px -81px;
+}
+table.discount-table td.padding {
+	background: url(http://cityhotelgroup.ru/js/calendar/calpad.jpg);
+}
+table.discount-table td.price50{background: #d4000c; color:#fff;}
+table.discount-table td.price30{background: url(http://cityhotelgroup.ru/js/calendar/cells.png);background-position: 81px 0px; color:#fff;}
+table.discount-table td.price40{background: #26C281; color:#fff;}
+table.discount-table td.price10{background: rgb(74, 86, 157); color:#fff;"}
+
+.next {
+    cursor: pointer;
+    height: 37px;
+    position: absolute;
+    right: 2%;
+    z-index: 21;
+    color: #ef4f69;
+}
+.prev {
+    cursor: pointer;
+    height: 37px;
+    position: absolute;
+    width: 37px;
+    z-index: 21;
+    color: #ef4f69;
+}
