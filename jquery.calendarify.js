@@ -27,7 +27,7 @@ var init = function()	{
 var dateFromString = function(value){
 
 	value = value.split('-');
-    return new Date(value[0], value[1], value[2]);
+    return new Date(value[0], value[1] - 1, value[2]);
 
 }
 
@@ -39,7 +39,7 @@ var setDiscounts = function(Discounts) {
 
         	var currentdate = dateFromString(Discounts[i].date);
             var year = currentdate.getFullYear().toString();
-            var month = (currentdate.getMonth() - 1).toString();
+            var month = (currentdate.getMonth()).toString();
             var day = currentdate.getDate().toString();
             
             if (!data[year]) {
